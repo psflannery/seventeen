@@ -1,0 +1,30 @@
+//
+// Captions
+// --------------------------------------------------
+
+.wp-caption {
+	margin-bottom: @grid-gutter-width;
+	max-width: 100%;
+	img {
+		border: 0 none;
+		height: auto;
+		margin: 0;
+		padding: 0;
+		width: auto;
+	}
+	&.alignnone {
+		//margin: (@line-height-computed / 4) @line-height-computed @line-height-computed 0;
+		margin-bottom: @line-height-computed;
+	}
+	&.alignleft {
+		&:extend(.wp-caption.alignnone);
+	}
+	&.alignright {
+		&:extend(.wp-caption.alignnone);
+	}
+}
+.wp-caption-text {
+    font-size: @font-size-small;
+	margin: @line-height-computed/2 0;
+	text-align: inherit;
+}

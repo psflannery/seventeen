@@ -1,0 +1,42 @@
+//
+// Posts and Pages
+// --------------------------------------------------
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 @grid-gutter-width;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline {
+	display: inline;
+}
+
+.attachment-post-thumbnail {
+	&:extend(p);
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	//margin: 0 0 (@grid-gutter-width/2) 0;
+	margin-bottom: @grid-gutter-width/2;
+}
+
+.entry-content {
+	div[class*="col-"] {
+		margin-bottom: @grid-gutter-width;
+	}
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 (@grid-gutter-width/2);
+}

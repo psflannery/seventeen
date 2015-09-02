@@ -1,0 +1,42 @@
+//
+// Footer
+// --------------------------------------------------
+
+.site-footer {
+	#gradient.vertical( @start-color: fade(@body-bg, 0%); @end-color: @body-bg; @start-percent: 0%; @end-percent: 35% );
+	height: @footer-height;
+	position: fixed;
+	bottom: 0;
+	right: @grid-gutter-width/2;
+	left: @grid-gutter-width/2;
+	z-index: @zindex-footer;
+	@media (min-width: @screen-sm-min) {
+		right: @page-margin;
+		left: @page-margin;
+	}
+}
+.site-info {
+	border-top: 2px solid @border-color;
+	text-align: right;
+	margin-top: @footer-fade;
+	padding-top: @padding-xs-horizontal;
+}
+.adr {
+	margin-bottom: 0;
+}
+.street-address {
+	&:after {
+		content:"\0020"; //space
+	}
+}
+.region {
+	&:after{
+		&:extend(.street-address:after);
+	}
+}
+.tel {
+	display: block;
+}
+.email {
+	&:extend(.tel);
+}

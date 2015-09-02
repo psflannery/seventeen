@@ -1,0 +1,30 @@
+//
+// Archives
+// --------------------------------------------------
+
+.exhibition-chron-list {
+	//margin-bottom: @grid-gutter-width/2;
+	margin-bottom: @grid-gutter-width;
+}
+.exhibition-year-list {
+	.clearfix();
+	clear: both;
+	li {
+		margin-bottom: @grid-gutter-width;
+		@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+			&:nth-child(3n+1) {
+				clear: both;
+			}		
+		}
+		@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+			&:nth-child(4n+1) {
+				clear: both;
+			}
+		}
+		@media (min-width: @screen-lg-min) {
+			&:nth-child(6n+1) {
+				clear: both;
+			}
+		}
+	}
+}

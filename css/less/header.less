@@ -1,0 +1,26 @@
+//
+// Header
+// --------------------------------------------------
+
+.site-header {
+	margin-bottom: @grid-gutter-width*1.5;
+}
+.site-branding {
+	position: fixed;
+	top: @page-margin/1.2;
+	right: @page-margin/2;
+	z-index: @zindex-title;
+	@media (min-width: @screen-sm-min) {
+		right: @page-margin*1.25; //75
+	}
+}
+.site-title {
+	margin: 0;
+}
+.site-logo {
+	background: url('img/seventeenlogoweb.png') no-repeat;
+	height: @logo-height;
+	display: block;
+	width: @logo-width;
+	background-size: @logo-width;
+}
