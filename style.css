@@ -4,16 +4,18 @@ Theme URI: http://www.seventeengallery.com/
 Author: Paul Flannery
 Author URI: http://paulflannery.co.uk
 Description: Updated theme for Seventeen
-Version: 1.1.0
+Version: 1.1.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: seventeen
 Tags: white, fluid-layout, responsive-layout, custom-menu, editor-style, featured-images, translation-ready
+GitHub Theme URI: https://github.com/psflannery/seventeen
+GitHub Branch: master
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Pencil Nib is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Seventeen is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
@@ -2017,6 +2019,13 @@ input[type="button"].btn-block {
 .page-links {
   clear: both;
   margin: 0 0 15px;
+}
+/* Splash Page */
+.splash-header-offset {
+  margin-top: 105px;
+}
+.page-template-splash-page .site {
+  margin-bottom: 0;
 }
 .site-footer {
   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #ffffff 35%);

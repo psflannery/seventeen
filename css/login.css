@@ -15,12 +15,12 @@
 
 /* Logo */
 .login h1 a {
-	background-image: url(../img/seventeen-login-logo.png);
+	background-image: url(../img/seventeenlogoweb.png);
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 80px;
-    /*height: 65px;*/
-    /*padding-bottom: 30px;*/
+	background-size: 120px;
 	display: block; 
 	overflow: hidden;
 	text-indent: -9999px;
+	width: 120px;
 }
