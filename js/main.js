@@ -161,6 +161,9 @@
 		
 		/* Remove class `.row` from posts that don't use the new shortcode structure */
 		$('.entry-content:not(:has(div[class*="col-"]))').removeClass('row');
+
+		/* Deal with some fouc */
+		$('.js .entry-content.row').css( "visibility", "visible" );
 	};
     
     /**

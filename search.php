@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-    <main id="main" class="site-main" role="main">
+    <main id="main" class="site-main container-fluid" role="main">
 
     <?php if ( have_posts() ) : ?>
 

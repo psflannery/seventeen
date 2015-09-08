@@ -26,10 +26,6 @@
 
 	<?php endwhile; ?>
 
-<?php else : ?>
-
-	<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 <?php endif; ?>
 
 <?php wp_reset_postdata(); ?>

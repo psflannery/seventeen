@@ -122,14 +122,24 @@ output {
   background-color: @input-bg;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: none;
-  border-bottom: 2px solid @input-border;
+  border: 1px solid @input-border;
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
   .form-control-focus();
 
+  // iOS reset
+  -webkit-appearance: none;
+  box-shadow: none;
+
   // Placeholder
   .placeholder();
+
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
 
   // Disabled and read-only inputs
   //

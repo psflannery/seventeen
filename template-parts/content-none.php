@@ -26,7 +26,7 @@
 
 		<?php else : ?>
 
-			<p><?php esc_html_e( 'Sorry, that page wasn&rsquo;t foundx. Try a search or return to ', 'seventeen' ); ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<p><?php esc_html_e( 'Sorry, that page wasn&rsquo;t found. Try a search or return to ', 'seventeen' ); ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>

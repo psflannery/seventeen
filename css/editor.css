@@ -34,7 +34,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Times New Roman", Times, Georgia, serif;
+  font-family: Palatino, "Times New Roman", Times, Georgia, serif;
   font-size: 12px;
   line-height: 1.42857143;
   color: #000000;
@@ -123,7 +123,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Times New Roman", Times, Georgia, serif;
+  font-family: Palatino, "Times New Roman", Times, Georgia, serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -252,6 +252,9 @@ mark {
 .text-center {
   text-align: center;
 }
+.error-404 .page-header {
+  margin-top: 60px;
+}
 ul,
 ol {
   margin-top: 0;
@@ -319,7 +322,7 @@ blockquote {
   margin: 0 0 17px;
   font-size: 12px;
   font-style: italic;
-  font-family: "Times New Roman", Times, Georgia, serif;
+  font-family: Palatino, "Times New Roman", Times, Georgia, serif;
   position: relative;
 }
 blockquote p:last-child,
