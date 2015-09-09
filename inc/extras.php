@@ -132,6 +132,7 @@ function seventeen_artist_archive_query( $query ) {
 	if( $query->is_main_query() && !$query->is_feed() && !is_admin() && $query->is_post_type_archive( 'artists' ) ) {
 		$query->set( 'order', 'ASC' );
 		$query->set( 'orderby', 'title' );
+		$query->set( 'post_parent', 0 );
 	}
 }
 add_action( 'pre_get_posts', 'seventeen_artist_archive_query' );
