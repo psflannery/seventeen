@@ -46,6 +46,7 @@ function seventeen_setup() {
         'publications'
     ) );
     add_image_size( 'seventeen-large', 2000, 1500 );
+    add_image_size( 'seventeen-mid', 800, 9999 );
     
     // This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
